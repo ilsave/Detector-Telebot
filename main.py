@@ -9,7 +9,7 @@ token = "1222340645:AAEIYp5m5QaYQx68tQ2xo-P7ccA5xE27OEQ"
 
 bot = telebot.TeleBot(token)
 
-
+#hello, its me!
 @bot.message_handler(commands=['start'])
 def welcome(message):
     bot.send_message(message.chat.id, "Привет, {0.first_name}!\nЯ - бот, который может обнаружить объект на фотографии".format(message.from_user, bot.get_me()))
